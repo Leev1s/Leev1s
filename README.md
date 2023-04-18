@@ -1,6 +1,6 @@
 ### Hi there 👋
 
-[]https://url.lev1s.xyz/icon
+![]https://url.lev1s.xyz/icon
 <!--
 **o0Lev1s0o/o0Lev1s0o** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
 

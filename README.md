@@ -1,6 +1,10 @@
 ### Hi there 👋
+![Visitor Count](https://profile-counter.glitch.me/你的Github用户名/count.svg)
 我不知道该在这里写些什么，甚至是该用哪种语言我都不知道，我到底在干嘛呢？
 - 2024新年快乐
+![](https://github-readme-stats.vercel.app/api?username=Leev1s&show_icons=true&theme=transparent)
+
+![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=Leev1s&layout=compact&theme=tokyonight)
 <!--
 **o0Lev1s0o/o0Lev1s0o** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
 

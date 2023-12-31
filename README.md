@@ -1,21 +1,8 @@
-### Hi there 👋
-![Visitor Count](https://profile-counter.glitch.me/你的Github用户名/count.svg)
+### Hi there, I'm Lev1s  <img src="https://raw.githubusercontent.com/iampavangandhi/iampavangandhi/master/gifs/Hi.gif" width="20px">
+
+[![Github](https://img.shields.io/badge/github-Leev1s-white?logo=github)](https://github.com/Leev1s)
+[![Instagram](https://img.shields.io/badge/ins-Leeev1s-pink?logo=instagram)](https://www.instagram.com/leeev1s/)
+[![Twitter](https://img.shields.io/badge/x.com-Leev1s-blue?logo=twitter)](https://twitter.com/Leev1s)
+
 我不知道该在这里写些什么，甚至是该用哪种语言我都不知道，我到底在干嘛呢？
 - 2024新年快乐
-![](https://github-readme-stats.vercel.app/api?username=Leev1s&show_icons=true&theme=transparent)
-
-![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=Leev1s&layout=compact&theme=tokyonight)
-<!--
-**o0Lev1s0o/o0Lev1s0o** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
-
-Here are some ideas to get you started:
-
-- 🔭 I’m currently working on ...
-- 🌱 I’m currently learning ...
-- 👯 I’m looking to collaborate on ...
-- 🤔 I’m looking for help with ...
-- 💬 Ask me about ...
-- 📫 How to reach me: ...
-- 😄 Pronouns: ...
-- ⚡ Fun fact: ...
--->

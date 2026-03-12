@@ -1,0 +1,58 @@
+name: Daily Automation
+
+on:
+  schedule:
+    # 23:30 UTC is 07:30 UTC+8
+    - cron: '30 23 * * *'
+  workflow_dispatch:
+
+jobs:
+  daily-automation:
+    runs-on: ubuntu-22.04
+    permissions:
+      contents: write
+
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v6
+
+      - name: Task 1 - Fetch TradingView Chart
+        env:
+          CHART_API_KEY: ${{ secrets.CHART_API_KEY }}
+        run: |
+          mkdir -p artifacts
+          SYMBOLS=("NYSE:BABA" "NASDAQ:NVDA" "NASDAQ:GOOG" "NASDAQ:AAPL" "AMEX:SPY" "BINANCE:BTCUSDT")
+          for symbol in "${SYMBOLS[@]}"; do
+            FILENAME="${symbol##*:}"
+            echo "Fetching chart for $symbol..."
+            curl -s -X POST "https://api.chart-img.com/v2/tradingview/advanced-chart" \
+              -H "x-api-key: $CHART_API_KEY" \
+              -H "Content-Type: application/json" \
+              -d "{
+                \"symbol\": \"$symbol\",
+                \"height\": 300,
+                \"theme\": \"dark\",
+                \"interval\": \"1D\",
+                \"studies\": [
+                  { \"name\": \"Volume\", \"forceOverlay\": true },
+                  { \"name\": \"Volume Profile Visible Range\" }
+                ]
+              }" -o "artifacts/${FILENAME}.png"
+              sleep 1
+          done
+
+      # ADD FUTURE TASKS HERE
+      # - name: Task 2 - Another Automation
+      #   run: ./scripts/my-other-task.sh
+
+      - name: Deploy Changes
+        run: |
+          git config --local user.email "github-actions[bot]@users.noreply.github.com"
+          git config --local user.name "github-actions[bot]"
+          git add .
+          if ! git diff --cached --quiet; then
+            git commit --amend -m "chore: daily automation $(date +'%Y-%m-%d')"
+            git push --force
+          else
+            echo "No changes detected, skipping push."
+          fi

@@ -1,0 +1,49 @@
+name: Patch Nerd Font
+
+on:
+  workflow_dispatch:
+  push:
+    paths:
+      - "fonts/*.ttf"
+      - ".github/workflows/patch-nerd-font.yml"
+
+permissions:
+  contents: read
+
+jobs:
+  patch:
+    runs-on: ubuntu-22.04
+
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v6
+
+      - name: Install dependencies
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y fontforge python3 python3-fontforge
+
+      - name: Fetch Nerd Fonts patcher
+        run: |
+          git clone --depth 1 --filter=blob:none --branch master \
+            https://github.com/ryanoasis/nerd-fonts.git nerd-fonts
+
+      - name: Patch fonts
+        run: |
+          for font in fonts/*.ttf; do
+            nerd-fonts/font-patcher \
+              --complete \
+              --mono \
+              --adjust-line-height \
+              --careful \
+              --makegroups 6 \
+              --outputdir artifacts \
+              "$font"
+          done
+
+      - name: Upload artifacts
+        uses: actions/upload-artifact@v6
+        with:
+          name: patched-nerd-fonts
+          path: artifacts/*.ttf
+          if-no-files-found: error

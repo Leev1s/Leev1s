@@ -1,0 +1,36 @@
+# ghostty +list-themes
+
+# ghostty +list-fonts
+
+# ghostty +show-config --default --docs
+
+term = xterm-256color
+
+# Appearance
+# font-family = MesloLGS NF
+# font-family = PTMono Nerd Font Mono
+# font-family = NovaMono Nerd Font Mono
+font-family = XanhMono Nerd Font Mono
+font-size = 13
+font-thicken = true
+theme = Sunset Drive
+background = 282c34
+background-opacity = 0.90
+background-blur = 0
+
+# macOS
+macos-titlebar-style = tabs
+
+# Quick terminal
+keybind = global:ctrl+grave_accent=toggle_quick_terminal
+quick-terminal-screen = macos-menu-bar
+quick-terminal-animation-duration = 0.1
+
+# Clipboard
+copy-on-select = clipboard
+clipboard-trim-trailing-spaces = true
+
+# Window behavior
+window-save-state = always
+window-inherit-working-directory = true
+window-inherit-font-size = true

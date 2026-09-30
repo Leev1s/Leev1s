@@ -8,6 +8,8 @@
 [![Email](https://img.shields.io/badge/Email-lev1s%40duck.com-0078D4?style=for-the-badge&logo=minutemailer&logoColor=white)](mailto:lev1s@duck.com)
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 [![Website](https://img.shields.io/badge/CV-lev1s.is--a.dev-00C7B7?style=for-the-badge&logo=readme&logoColor=white)](https://lev1s.is-a.dev)
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<a href="https://stats.uptimerobot.com/MPXlVChbyE?utm_source=status_badge&utm_medium=referral" target="_blank" rel="noopener"><picture><source media="(prefers-color-scheme: dark)" srcset="https://badge.uptimerobot.com/psp/09e8fed7f5d7084c1a85bcfb4f2e9f5d.svg?style=logo&theme=dark"><img src="https://badge.uptimerobot.com/psp/09e8fed7f5d7084c1a85bcfb4f2e9f5d.svg?style=logo&theme=light" alt="Lev1s Studio"></picture></a>
 
 </div>
 
